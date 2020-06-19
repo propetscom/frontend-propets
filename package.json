@@ -1,6 +1,10 @@
 {
   "name": "propets-rout-react-redux",
   "version": "0.1.0",
+ "description": "node app ",
+  "main": "app.js",
+  "scripts": {
+  "start": "node app.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,6 +19,17 @@
     "redux-thunk": "^2.3.0",
     "rxjs": "latest"
   },
+"repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -39,5 +54,10 @@
   "devDependencies": {
     "react-dropzone": "^11.0.1",
     "react-redux": "^7.2.0"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-router-dom": "latest",
+    "redux": "latest"
   }
 }

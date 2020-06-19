@@ -5,8 +5,8 @@ import {addImagesAction, deleteImageAction} from "../../../reduxTools/actions/Ad
 import {connect} from "react-redux";
 
 class SectionImages extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.onDrop = (files) => {
             console.log(files.length);
             let size = 5 - this.props.images.length;
