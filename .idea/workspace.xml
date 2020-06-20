@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d4ecc85-3045-49b8-96f8-27f3680b8955" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/addingNewPost/SectionImages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/addingNewPost/SectionImages.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +52,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\reduxTools" />
-      <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\components\propets" />
-      <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\components\sing" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\img" />
       <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\components\propets" />
       <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\reduxTools" />
+      <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\components\propets" />
+      <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\components\sing" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -251,12 +250,25 @@
       <workItem from="1592405850633" duration="869000" />
       <workItem from="1592599668292" duration="681000" />
       <workItem from="1592601030867" duration="17000" />
-      <workItem from="1592601050785" duration="774000" />
+      <workItem from="1592601050785" duration="882000" />
+      <workItem from="1592664170438" duration="347000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1592601851388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592601851388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#ESLint" timestamp="1584735229375">
@@ -271,26 +283,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="96" key="#predeploy/0.0.1536.824@0.0.1536.824" timestamp="1592339952915" />
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1592601849476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592601849476" />
     <state x="228" y="184" key="FileChooserDialogImpl" timestamp="1592601044984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="228" y="184" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592601044984" />
-    <state width="460" height="252" key="GridCell.Tab.0.bottom" timestamp="1592406722175">
+    <state width="460" height="252" key="GridCell.Tab.0.bottom" timestamp="1592664508427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592406722175" />
-    <state width="460" height="252" key="GridCell.Tab.0.center" timestamp="1592406722175">
+    <state width="460" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592664508427" />
+    <state width="460" height="252" key="GridCell.Tab.0.center" timestamp="1592664508427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592406722175" />
-    <state width="460" height="252" key="GridCell.Tab.0.left" timestamp="1592406722174">
+    <state width="460" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592664508427" />
+    <state width="460" height="252" key="GridCell.Tab.0.left" timestamp="1592664508425">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592406722174" />
-    <state width="460" height="252" key="GridCell.Tab.0.right" timestamp="1592406722175">
+    <state width="460" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592664508425" />
+    <state width="460" height="252" key="GridCell.Tab.0.right" timestamp="1592664508427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592406722175" />
+    <state width="460" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592664508427" />
     <state width="757" height="239" key="GridCell.Tab.1.bottom" timestamp="1592340683472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
