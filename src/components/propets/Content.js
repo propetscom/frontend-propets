@@ -5,7 +5,7 @@ import Lost from "./Lost";
 import Found from "./Found";
 import Services from "./Services";
 import Favorites from "./Favorites";
-import Profile from "./Profile";
+import Profile from "./profile/Profile";
 import AddNewPost from "./addingNewPost/AddNewPost";
 
 class Content extends React.Component{

@@ -106,7 +106,7 @@ class SectionImages extends React.Component {
                         <div className={'post-icon-text'}>
                             {tmp.map((file, index) =>
                                 (<div className={'div-drop-drag'}>
-                                    <span>{file.name}</span>
+                                    <span className={'text-drop-drag'}>{file.name} </span>
                                     <div className={'close'} onClick={() => this.deleteFile(index)}></div>
                                 </div>))}
                         </div>
