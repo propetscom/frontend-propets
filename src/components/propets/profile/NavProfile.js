@@ -1,3 +1,6 @@
+
+import style from '../../../css/profile.modules.css'
+
 import React from "react";
 
 class NavProfile extends React.Component{
@@ -5,11 +8,11 @@ class NavProfile extends React.Component{
         return(
             <div className="nav">
                 <ul className="links">
-                    <li className="sign-link">
-                        <p className={'btn-sign'}>My Profile</p>
+                    <li className="profile-link">
+                        <p className={'btn-profile'}>My Profile</p>
                     </li>
-                    <li className="sign-link">
-                        <p className={'btn-sign active'}>Activities</p>
+                    <li className="profile-link">
+                        <p className={'btn-profile active'}>Activities</p>
                     </li>
                 </ul>
             </div>

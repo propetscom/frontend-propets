@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d4ecc85-3045-49b8-96f8-27f3680b8955" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/propets/profile/NavProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/propets/profile/ProfileForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/profile.modules.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/addingNewPost/SectionImages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/addingNewPost/SectionImages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/newpost.modules.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newpost.modules.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Const.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/propets/profile/NavProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/profile/NavProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/propets/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/profile/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebstormProjects/Java30/pro_pets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -257,7 +255,9 @@
       <workItem from="1592601030867" duration="17000" />
       <workItem from="1592601050785" duration="882000" />
       <workItem from="1592664170438" duration="1865000" />
-      <workItem from="1592764915915" duration="2763000" />
+      <workItem from="1592764915915" duration="2805000" />
+      <workItem from="1592851763377" duration="1108000" />
+      <workItem from="1593023200219" duration="3886000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1592601851388</created>
@@ -287,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592666033099</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1592767710473</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592767710473</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,30 +317,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="96" key="#predeploy/0.0.1536.824@0.0.1536.824" timestamp="1592339952915" />
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1592767692892">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1592767708500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592767692892" />
-    <state x="228" y="184" key="FileChooserDialogImpl" timestamp="1592601044984">
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592767708500" />
+    <state x="228" y="184" key="FileChooserDialogImpl" timestamp="1593025532537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="228" y="184" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592601044984" />
-    <state width="460" height="252" key="GridCell.Tab.0.bottom" timestamp="1592767693099">
+    <state x="228" y="184" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593025532537" />
+    <state width="460" height="252" key="GridCell.Tab.0.bottom" timestamp="1593026907889">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592767693099" />
-    <state width="460" height="252" key="GridCell.Tab.0.center" timestamp="1592767693098">
+    <state width="460" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593026907889" />
+    <state width="460" height="252" key="GridCell.Tab.0.center" timestamp="1593026907888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592767693098" />
-    <state width="460" height="252" key="GridCell.Tab.0.left" timestamp="1592767693097">
+    <state width="460" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593026907888" />
+    <state width="460" height="252" key="GridCell.Tab.0.left" timestamp="1593026907888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592767693097" />
-    <state width="460" height="252" key="GridCell.Tab.0.right" timestamp="1592767693098">
+    <state width="460" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593026907888" />
+    <state width="460" height="252" key="GridCell.Tab.0.right" timestamp="1593026907888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592767693098" />
+    <state width="460" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593026907888" />
     <state width="757" height="239" key="GridCell.Tab.1.bottom" timestamp="1592340683472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

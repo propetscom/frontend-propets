@@ -1,0 +1,43 @@
+.profile-link{
+    width: 50%;
+    height: 34px;
+    box-shadow: 0 3px 6px #00000029;
+    cursor: pointer;
+}
+
+.btn-profile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 6px;
+    background-color: #669885;
+    padding-bottom: 9px;
+}
+
+.post-profile{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px #00000029;
+    margin-top: 15px;
+}
+
+.profile-icon{
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icons8-ice-cream-25.png");
+    filter: invert(1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-left: 8px;
+    padding-right: 30px;
+}
+.div-icon{
+    position: absolute;
+}
