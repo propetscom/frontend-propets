@@ -9,6 +9,7 @@ class ProfileForm extends React.Component{
             <div className={'post-profile'}>
                 <div className={'post-header'}>
                     <div className="page_header_img">
+                        <div>
                         <img className="page_img_user" src={this.props.avatar} alt="user"/>
                         <Dropzone
                             accept='image/*'
@@ -18,12 +19,13 @@ class ProfileForm extends React.Component{
                                 <section className="container">
                                     <div {...getRootProps({className: 'div-icon'})}>
                                         <input {...getInputProps()} />
-                                        <div className={'profile-icon'} onClick={open}>Browse
+                                        <div className={'profile-icon'} onClick={open}>
                                         </div>
                                     </div>
                                 </section>
                             )}
                         </Dropzone>
+                        </div>
                     </div>
                     <div className="page_header_right">
                         <div className="page_header_name page_header_name_new">{this.props.name}</div>

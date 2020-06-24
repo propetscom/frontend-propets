@@ -29,8 +29,7 @@
 .profile-icon{
     width: 14px;
     height: 14px;
-    background-image: url("../img/icons8-ice-cream-25.png");
-    filter: invert(1);
+    background-image: url("../img/camera3.png");
     background-position: center center;
     background-repeat: no-repeat;
     font-weight: 500;
@@ -40,4 +39,8 @@
 }
 .div-icon{
     position: absolute;
+    margin-left: 20px;
+    top: 220px;
+    width: 20px;
+    height: 20px;
 }
