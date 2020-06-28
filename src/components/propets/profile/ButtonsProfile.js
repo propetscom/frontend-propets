@@ -11,7 +11,7 @@ class ButtonsProfile extends React.Component {
                     <a className="btn cancel-btn" href="#">
                         <span>Cancel</span>
                     </a>
-                    <a className="btn save-btn" onClick={this.props.editUser(this.props.name,this.props.email,this.props.avatar,this.props.phone)} href={'#'}>
+                    <a className="btn save-btn" onClick={this.props.editUser(this.props.name,this.props.avatar,this.props.phone)} href={'#'}>
                         <i className="icon-save"/>
                         <span>Save changes</span>
                     </a>
@@ -23,7 +23,6 @@ class ButtonsProfile extends React.Component {
 const mapStateToProps = (state) => {
     return {
         name:state.login.user.name,
-        email:state.login.user.email,
         avatar:state.login.user.avatar,
         phone:state.login.user.phone
     }

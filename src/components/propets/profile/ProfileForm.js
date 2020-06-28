@@ -2,6 +2,8 @@ import * as React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import Dropzone from "react-dropzone";
+import {editUser} from "../../../reduxTools/actions/EditUserAction";
+import style from '../../../css/profile.module.css';
 
 class ProfileForm extends React.Component{
     constructor(props) {
@@ -69,7 +71,19 @@ class ProfileForm extends React.Component{
                     <span className={'span-styling error'}></span>
                 </div>
                 </div>
+                <div className="footer-sign right">
+                    <div className="footer-sign-right">
+                        <a className="btn cancel-btn" href="#">
+                            <span>Cancel</span>
+                        </a>
+                        <a className="btn save-btn"  href={'#'}>
+                            <i className="icon-save"/>
+                            <span>Save changes</span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         )
     }
 

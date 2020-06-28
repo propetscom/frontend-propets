@@ -3,8 +3,6 @@ import PostTitle from "../addingNewPost/PostTitle";
 import {postTitleProfile} from "../../../utils/Const";
 import NavProfile from "./NavProfile";
 import ProfileForm from "./ProfileForm";
-import Buttons from "../../sing/Buttons";
-import ButtonsProfile from "./ButtonsProfile";
 
 class Profile extends React.Component {
 
@@ -15,7 +13,6 @@ class Profile extends React.Component {
                     <PostTitle title={postTitleProfile}/>
                     <NavProfile/>
                     <ProfileForm/>
-                    <ButtonsProfile/>
                 </div>
             </div>
         )

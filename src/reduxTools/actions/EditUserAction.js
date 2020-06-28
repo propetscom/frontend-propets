@@ -1,4 +1,3 @@
-
 export const EDIT_USER_REQUEST = 'EDIT_USER_REQUEST';
 export const EDIT_USER_SUCCESS = 'LOGIN_SUCCESS';
 export const EDIT_USER_ERROR = 'LOGIN_ERROR';
@@ -27,13 +26,14 @@ export const EditUserError = (message) => {
     }
 };
 
-export const editUser = (name,email,avatar,phone) =>{
+export const editUser = (name,avatar,phone) =>{
     return(dispatch) => {
         let user = {
-            name: this.state.user,
-            email: this.state.email,
-            password: this.state.password
+            avatar: avatar,
+            name:name,
+            phone:phone
         };
+
         dispatch(requestEditUser(user));
         fetch('https://propetsapp.herokuapp.com/account/en/v1',{
             method: 'put',
@@ -43,6 +43,6 @@ export const editUser = (name,email,avatar,phone) =>{
                 'X-Token': localStorage.getItem("X-Token")
             },
             body: JSON.stringify(user)
-        })
+        }).then(response => console.log(response));
     }
 };

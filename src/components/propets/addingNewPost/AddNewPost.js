@@ -5,7 +5,7 @@ import PostTitle from "./PostTitle";
 import SectionText from "./SectionText";
 import SectionImages from "./SectionImages";
 import SectionButton from "./SectionButton";
-import style from '../../../css/newpost.modules.css';
+import style from '../../../css/newpost.module.css';
 
 function AddNewPost () {
 
