@@ -4,13 +4,37 @@ import {connect} from "react-redux";
 import Dropzone from "react-dropzone";
 
 class ProfileForm extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            image: ''
+        }
+    }
+
+    onDrop = (file) => {
+        console.log(file[0]);
+        console.log(URL.createObjectURL(file[0]));
+        this.setState({
+            image: URL.createObjectURL(file[0])
+        });
+
+    };
+
+    componentDidMount() {
+        let avatar = this.props.avatar;
+        this.setState({
+            image: avatar
+        })
+    }
+
     render() {
         return(
             <div className={'post-profile'}>
                 <div className={'post-header'}>
                     <div className="page_header_img">
                         <div>
-                        <img className="page_img_user" src={this.props.avatar} alt="user"/>
+                            {console.log(this.image)}
+                        <img className="page_img_user" src={this.state.image} alt="user"/>
                         <Dropzone
                             accept='image/*'
                             noClick={true}
@@ -35,13 +59,13 @@ class ProfileForm extends React.Component{
                 <div className="form-div">
                     <label className="form-text">Email:</label>
                     <input name='email'
-                           className="form-styling" placeholder="Email" type="email"/>
+                           className="form-styling" placeholder={this.props.email} type="email"/>
                     <span className={'span-styling error'}></span>
                 </div>
                 <div className="form-div">
                     <label className="form-text">Phone:</label>
-                    <input name='email'
-                           className="form-styling" placeholder="Email" type="email"/>
+                    <input name='phone'
+                           className="form-styling" placeholder={this.props.phone} type="phone"/>
                     <span className={'span-styling error'}></span>
                 </div>
                 </div>
@@ -54,7 +78,9 @@ class ProfileForm extends React.Component{
 const mapStateToProps = (state) => {
     return {
         avatar: state.login.user.avatar,
-        name:state.login.user.name
+        name:state.login.user.name,
+        email: state.login.user.email,
+        phone:state.login.user.phone
     }
 };
 const mapDispatchToProps = (dispatch) => {

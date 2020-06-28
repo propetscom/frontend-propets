@@ -25,7 +25,7 @@ handleSing=(section) => {
                     <span className="title"><b>Welcome!</b> Please sign in / sign up to continue</span>
                 </div>
                 <Nav handleSing={this.handleSing} sing={this.state.sign}/>
-                <SignUp passwordEror={this.state.passwordError} changePage={this.props.changePage} sign={this.state.sign}/>
+                <SignUp passwordEror={this.state.passwordError} sign={this.state.sign}/>
 
                 </div>
 

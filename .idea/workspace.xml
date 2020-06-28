@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d4ecc85-3045-49b8-96f8-27f3680b8955" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/camera.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/camera2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/camera3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/propets/profile/ButtonsProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reduxTools/actions/EditUserAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/propets/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/profile/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/propets/profile/ProfileForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/profile/ProfileForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sing/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sing/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sing/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sing/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/profile.modules.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/profile.modules.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,17 +58,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Home\pro-pets\src\img" />
-      <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\img" />
-      <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\components\propets" />
-      <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Home\pro-pets\src\components\propets\profile" />
       <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\reduxTools" />
       <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\components\propets" />
       <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\components\sing" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\pro-pets\src\img" />
+      <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\img" />
+      <recent name="C:\Users\Home\WebstormProjects\Java30\propets-rout-react-redux\src\components\propets" />
+      <recent name="C:\Users\Home\WebstormProjects\Java30\pro-pets-react\src\img" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -259,7 +262,10 @@
       <workItem from="1592664170438" duration="1865000" />
       <workItem from="1592764915915" duration="2805000" />
       <workItem from="1592851763377" duration="1108000" />
-      <workItem from="1593023200219" duration="5576000" />
+      <workItem from="1593023200219" duration="5620000" />
+      <workItem from="1593110390126" duration="605000" />
+      <workItem from="1593173556925" duration="1445000" />
+      <workItem from="1593333306973" duration="4645000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1592601851388</created>
@@ -303,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593027322321</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit">
+      <created>1593028925671</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593028925671</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,30 +339,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="96" key="#predeploy/0.0.1536.824@0.0.1536.824" timestamp="1592339952915" />
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1593027320678">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1593028924496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593027320678" />
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593028924496" />
     <state x="228" y="184" key="FileChooserDialogImpl" timestamp="1593025532537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="228" y="184" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593025532537" />
-    <state width="460" height="252" key="GridCell.Tab.0.bottom" timestamp="1593026907889">
+    <state width="1515" height="252" key="GridCell.Tab.0.bottom" timestamp="1593199026600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593026907889" />
-    <state width="460" height="252" key="GridCell.Tab.0.center" timestamp="1593026907888">
+    <state width="1515" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593199026600" />
+    <state width="1515" height="252" key="GridCell.Tab.0.center" timestamp="1593199026600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593026907888" />
-    <state width="460" height="252" key="GridCell.Tab.0.left" timestamp="1593026907888">
+    <state width="1515" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593199026600" />
+    <state width="1515" height="252" key="GridCell.Tab.0.left" timestamp="1593199026600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593026907888" />
-    <state width="460" height="252" key="GridCell.Tab.0.right" timestamp="1593026907888">
+    <state width="1515" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593199026600" />
+    <state width="1515" height="252" key="GridCell.Tab.0.right" timestamp="1593199026600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="460" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593026907888" />
+    <state width="1515" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593199026600" />
     <state width="757" height="239" key="GridCell.Tab.1.bottom" timestamp="1592340683472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -398,10 +411,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="757" height="239" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1592340683473" />
-    <state x="418" y="57" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590691390073">
+    <state x="418" y="57" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593334602664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="418" y="57" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1590691390073" />
+    <state x="418" y="57" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1593334602664" />
     <state x="577" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592601824484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

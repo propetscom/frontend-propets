@@ -44,3 +44,28 @@
     width: 20px;
     height: 20px;
 }
+
+.icon-save{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/save.png');
+    margin-right: 5px;
+}
+
+.save-btn{
+    display: flex;
+    width: 148px;
+    height: 34px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    justify-content: flex-start;
+    padding-top: 7px;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color:#8DBFAC ;
+}
+.right{
+    justify-content: flex-end;
+}

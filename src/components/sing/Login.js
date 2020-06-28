@@ -8,7 +8,7 @@ class Login extends React.Component{
             <div className="wrapper-sign">
                 <div className={'form'}>
                     <Logo/>
-                    <Form changePage={this.props.changePage}/>
+                    <Form/>
                 </div>
             </div>
         )
