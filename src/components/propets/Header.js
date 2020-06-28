@@ -1,4 +1,4 @@
-import style from '../../css/home.module.css'
+import style from '../../css/home.modules.css'
 
 import React from "react";
 import {Link} from "react-router-dom";

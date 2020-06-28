@@ -104,12 +104,12 @@ class Post extends React.Component {
             return (
                 <div className="post">
                     <div className="page_header_img">
-                        <img className="page_img_user" src="https://www.gravatar.com/avatar/0?d=mp" alt="user"/>
+                        <img className="page_img_user" src={this.props.avatar} alt="user"/>
                     </div>
                     <div className="page_main">
                         <div className="page_header">
                             <div className="page_header_right">
-                                <div className="page_header_name">{this.props.userLogin}</div>
+                                <div className="page_header_name">{this.props.username}</div>
                                 <div className="page_header_time">{this.state.date}</div>
                             </div>
                         </div>

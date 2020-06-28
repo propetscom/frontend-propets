@@ -3,86 +3,113 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import Dropzone from "react-dropzone";
 import {editUser} from "../../../reduxTools/actions/EditUserAction";
-import style from '../../../css/profile.module.css';
+import style from "../../../css/profile.modules.css"
 
 class ProfileForm extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            image: ''
+            image: '',
+            name:'',
+            phone:'',
+            avatar:''
         }
     }
 
     onDrop = (file) => {
         console.log(file[0]);
-        console.log(URL.createObjectURL(file[0]));
+        console.log(file[0]);
         this.setState({
-            image: URL.createObjectURL(file[0])
+            image: URL.createObjectURL(file[0]),
+            avatar: file[0]
         });
 
     };
 
     componentDidMount() {
         let avatar = this.props.avatar;
+        let name = this.props.name;
+        let phone = this.props.phone;
         this.setState({
-            image: avatar
+            image: avatar,
+            name:name,
+            phone:phone
         })
     }
 
+    handleName = (e) => {
+        let value = e.target.value;
+        this.setState({
+            name: value
+        })
+    };
+
+    handlePhone =  (e) => {
+        let value = e.target.value;
+        this.setState({
+            phone: value
+        })
+    };
+
     render() {
         return(
-            <div className={'post-profile'}>
-                <div className={'post-header'}>
-                    <div className="page_header_img">
-                        <div>
-                            {console.log(this.image)}
-                        <img className="page_img_user" src={this.state.image} alt="user"/>
-                        <Dropzone
-                            accept='image/*'
-                            noClick={true}
-                            noKeyboard={true} onDrop={this.onDrop}>
-                            {({getRootProps, getInputProps, open}) => (
-                                <section className="container">
-                                    <div {...getRootProps({className: 'div-icon'})}>
-                                        <input {...getInputProps()} />
-                                        <div className={'profile-icon'} onClick={open}>
-                                        </div>
-                                    </div>
-                                </section>
-                            )}
-                        </Dropzone>
+            <div>
+                <div className={'post-profile'}>
+                    <div className={'post-header'}>
+                        <div className="page_header_img">
+                            <div>
+                                <img className="page_img_user" src={this.state.image} alt="user"/>
+                                <Dropzone
+                                    accept='image/*'
+                                    noClick={true}
+                                    noKeyboard={true} onDrop={this.onDrop}>
+                                    {({getRootProps, getInputProps, open}) => (
+                                        <section className="container">
+                                            <div {...getRootProps({className: 'div-icon'})}>
+                                                <input {...getInputProps()} />
+                                                <div className={'profile-icon'} onClick={open}>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    )}
+                                </Dropzone>
+                            </div>
+                        </div>
+                        <div className="page_header_right">
+                            <input name={'name'} className="page_header_name page_header_name_new" type={'text'} placeholder={this.props.name}
+                                   value={this.state.name} onChange={this.handleName}></input>
                         </div>
                     </div>
-                    <div className="page_header_right">
-                        <div className="page_header_name page_header_name_new">{this.props.name}</div>
+                    <div className="signup">
+                        <div className="form-div">
+                            <label className="form-text">Email:</label>
+                            <input name='email'
+                                   className="form-styling" placeholder={this.props.email}  type="email" disabled="disabled"/>
+                            <span className={'span-styling error'}></span>
+                        </div>
+                        <div className="form-div">
+                            <label className="form-text">Phone:</label>
+                            <input name='phone'
+                                   className="form-styling" placeholder={this.props.phone} value={this.state.phone} type="phone"
+                                   onChange={this.handlePhone}/>
+                            <span className={'span-styling error'}></span>
+                        </div>
                     </div>
+
                 </div>
-                <div className="signup">
-                <div className="form-div">
-                    <label className="form-text">Email:</label>
-                    <input name='email'
-                           className="form-styling" placeholder={this.props.email} type="email"/>
-                    <span className={'span-styling error'}></span>
-                </div>
-                <div className="form-div">
-                    <label className="form-text">Phone:</label>
-                    <input name='phone'
-                           className="form-styling" placeholder={this.props.phone} type="phone"/>
-                    <span className={'span-styling error'}></span>
-                </div>
-                </div>
-                <div className="footer-sign right">
+                <div className="footer-profile">
                     <div className="footer-sign-right">
-                        <a className="btn cancel-btn" href="#">
+                        <div className="btn cancel-btn" href="#">
                             <span>Cancel</span>
-                        </a>
-                        <a className="btn save-btn"  href={'#'}>
+                        </div>
+                        <div className="btn save-btn" onClick={() => this.props.editUser(this.props.email, this.state.avatar, this.state.name, this.state.phone)} href={'#'}>
                             <i className="icon-save"/>
                             <span>Save changes</span>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
         )
     }
@@ -100,7 +127,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators(
         {
-
+            editUser: editUser
         },
         dispatch
     );

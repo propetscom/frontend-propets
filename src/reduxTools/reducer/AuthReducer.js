@@ -1,5 +1,6 @@
 import {LOGIN_ERROR, LOGIN_REQUEST, LOGIN_SUCCESS, TOKEN_REQUEST} from "../actions/LoginAction";
 import {LOGOUT_SUCCESS} from "../actions/LogoutAction";
+import {EDIT_USER_ERROR, EDIT_USER_REQUEST, EDIT_USER_SUCCESS} from "../actions/EditUserAction";
 
 export default function auth(state =  {}, action) {
     switch (action.type) {
@@ -32,6 +33,23 @@ export default function auth(state =  {}, action) {
             return Object.assign({}, state, {
                 isFetching: true,
                 isAuthenticated: false
+            });
+        case EDIT_USER_ERROR:
+            return Object.assign({}, state, {
+                isFetching: false,
+                message: action.message
+            });
+        case EDIT_USER_SUCCESS:
+            return Object.assign({}, state, {
+                isFetching: false,
+                message: '',
+                user: action.user
+            });
+        case EDIT_USER_REQUEST:
+            Object.assign({}, state, {
+                isFetching: true,
+                message: '',
+                user: action.user
             });
         default:
             return state

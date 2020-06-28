@@ -31,9 +31,9 @@ export const uploadError = (message, error) => {
 
 export const imagesUpload = (image,count,email, name, avatar, text, urls) => {
     return (dispatch) => {
-        console.log('count' + count);
+       // console.log('count' + count);
         dispatch(requestUpload(image));
-        console.log('image' + image.name);
+      //  console.log('image' + image.name);
         let myHeaders = new Headers();
         myHeaders.append("Authorization", "Client-ID c2d94ffce964b24");
         let formdata = new FormData();

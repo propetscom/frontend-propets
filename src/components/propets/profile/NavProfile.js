@@ -1,5 +1,5 @@
 
-import style from '../../../css/profile.module.css'
+import style from '../../../css/profile.modules.css'
 
 import React from "react";
 
