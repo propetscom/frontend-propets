@@ -43,7 +43,8 @@ class Home extends React.Component {
         return (
             <div className={'content'}>
                 <section className="page_content">
-                    {this.props.posts ? this.props.posts.map((post, index) => <Post key={post.id} {...post}/>) : ''}
+                    {console.log('post'+this.props.posts[0])}
+                    {this.props.posts[0] ? this.props.posts.map((post, index) => <Post key={post.id} {...post}/>) : ''}
                 </section>
                 <div>
                     {this.props.numbers.map((page, index) => <NavigationPage pagePosts={page} index={index} handlePagePosts={this.handlePagePosts}/>)}

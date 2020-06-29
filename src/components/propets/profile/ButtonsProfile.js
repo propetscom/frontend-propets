@@ -2,29 +2,36 @@ import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {editUser} from "../../../reduxTools/actions/EditUserAction";
+import {Link} from "react-router-dom";
 
 class ButtonsProfile extends React.Component {
     render() {
         return (
             <div className="footer-sign right">
                 <div className="footer-sign-right">
-                    <a className="btn cancel-btn" href="#">
-                        <span>Cancel</span>
-                    </a>
-                    <a className="btn save-btn" onClick={this.props.editUser(this.props.name,this.props.avatar,this.props.phone)} href={'#'}>
-                        <i className="icon-save"/>
-                        <span>Save changes</span>
-                    </a>
+                    <Link to={'propets/home'}>
+                        <div className="btn cancel-btn">
+                            <span>Cancel</span>
+                        </div>
+                    </Link>
+                    <Link to={'/propets/home'}>
+                        <div className="btn save-btn"
+                             onClick={this.props.editUser(this.props.name, this.props.avatar, this.props.phone)}>
+                            <i className="icon-save"/>
+                            <span>Save changes</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
         )
     }
 }
+
 const mapStateToProps = (state) => {
     return {
-        name:state.login.user.name,
-        avatar:state.login.user.avatar,
-        phone:state.login.user.phone
+        name: state.login.user.name,
+        avatar: state.login.user.avatar,
+        phone: state.login.user.phone
     }
 };
 const mapDispatchToProps = (dispatch) => {

@@ -19,21 +19,20 @@ class MenuUser extends React.Component {
             <nav className="menu-user">
                 <ul className="menu-user-items">
                     <Link to={'/propets/profile'}>
-                        <div className="menu-user-item menu-link-activ">
-                            <div className="user-link">
+                        <li className="menu-user-item ">
+                            <div className={this.props.pageMenu === 'profile' ? "user-link menu-link-active" : 'user-link'}>
                                 <div className="user-img">
                                     <img className="img-photo" src={this.props.avatar} alt="user"/>
                                 </div>
                                 <div className="user-name">{this.props.name}</div>
                             </div>
-                        </div>
+                        </li>
                     </Link>
                     <li className="menu-user-item">
                         <div className="logout-link" onClick={() => this.props.logout()}>
                             <i className="logout-icon"></i>
                             <span className="logout-link-text">Logout</span>
                         </div>
-
                     </li>
                 </ul>
             </nav>

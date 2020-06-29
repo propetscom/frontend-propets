@@ -57,6 +57,11 @@ li{
     display: flex;
 }
 
+.header-right-lost{
+    width: 35%;
+    display: flex;
+}
+
 .button-header-home{
     width: 148px;
     height: 34px;
@@ -79,12 +84,43 @@ li{
     padding-right: 30px;
 }
 
+.lost-icon-search{
+    width: 14px;
+    height: 14px;
+    background-image: url("img/searchblack.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-right: 30px;
+}
+
+.found-icon-search{
+    width: 14px;
+    height: 14px;
+    background-image: url("img/found.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-right: 30px;
+}
+
 .button-header-home-text{
     font-size: 12px;
     color: #FFFFFF;
     padding-left: 20px;
 }
-
+.button-header-lost-text{
+    font-size: 12px;
+    color: #393939;
+    padding-left: 10px;
+}
+.button-header-fount-text{
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
 .sidebar, .marketing{
     width: 23%;
     background-color: #84B6A3;
@@ -115,6 +151,17 @@ li{
     height: 40px;
     position: absolute;
     right: 0;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+
+}
+.div-active-menu-user{
+    background: #FFFFFF;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 400px;
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
 
@@ -160,6 +207,7 @@ li{
     overflow: hidden;
     width: 37px;
     height: 37px;
+    z-index: 1;
 
 }
 .img-photo{
@@ -168,6 +216,7 @@ li{
     vertical-align: middle;
     width: 35px;
     height: 35px;
+    z-index: 1;
     /* background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -175,12 +224,21 @@ li{
 }
 .user-name{
     font-size: 12px;
-    color: #FFFFFF;
+}
+.user-name:hover{
+    color: #669885;
 }
 .user-link{
     display: inline-block;
     vertical-align: middle;
+    color: #FFFFFF;
 }
+.menu-link-active {
+    border-radius: 0 17px 17px 0;
+    background-color: #FFFFFF;
+    color: #669885;
+}
+
 .menu-user-item{
     padding-bottom: 70px;
 }

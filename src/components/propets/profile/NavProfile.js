@@ -1,12 +1,11 @@
 
 import style from '../../../css/profile.modules.css'
-
 import React from "react";
 
 class NavProfile extends React.Component{
     render() {
         return(
-            <div className="nav">
+            <div>
                 <ul className="links">
                     <li className="profile-link">
                         <p className={'btn-profile'}>My Profile</p>

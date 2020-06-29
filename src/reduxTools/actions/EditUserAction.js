@@ -20,17 +20,19 @@ export const receiveEditUser = (user) => {
     }
 };
 
-export const editUserError = (message) => {
+export const editUserError = (messageEditUser) => {
     return {
         type: EDIT_USER_ERROR,
-        isFetching: false,
-        message
+        messageEditUser
     }
 };
 
-export const editUser = (email,avatar,name,phone) =>{
+export const editUserWithAvatar = (email,avatar,name,phone) =>{
     return(dispatch) => {
-
+        console.log(email);
+        console.log(avatar);
+        console.log(name);
+        console.log(phone);
         let myHeaders = new Headers();
         myHeaders.append("Authorization", "Client-ID c2d94ffce964b24");
         let formdata = new FormData();
@@ -75,9 +77,8 @@ export const editUser = (email,avatar,name,phone) =>{
                 })
                     .then(json => {
                         dispatch(receiveEditUser(json));
-                        localStorage.setItem("X-Name", json.name);
+                        localStorage.setItem("X-Name", json.name );
                         localStorage.setItem("X-Avatar", json.avatar);
-                        localStorage.setItem("X-Roles", json.roles);
                         localStorage.setItem("X-Phone", json.phone);
                     });
             })

@@ -2,17 +2,18 @@ import * as React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import Dropzone from "react-dropzone";
-import {editUser} from "../../../reduxTools/actions/EditUserAction";
+import {editUser, editUserWithAvatar} from "../../../reduxTools/actions/EditUserAction";
 import style from "../../../css/profile.modules.css"
+import {Link} from "react-router-dom";
 
-class ProfileForm extends React.Component{
+class ProfileForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             image: '',
-            name:'',
-            phone:'',
-            avatar:''
+            name: '',
+            phone: '',
+            avatar: ''
         }
     }
 
@@ -32,8 +33,8 @@ class ProfileForm extends React.Component{
         let phone = this.props.phone;
         this.setState({
             image: avatar,
-            name:name,
-            phone:phone
+            name: name,
+            phone: phone
         })
     }
 
@@ -44,7 +45,7 @@ class ProfileForm extends React.Component{
         })
     };
 
-    handlePhone =  (e) => {
+    handlePhone = (e) => {
         let value = e.target.value;
         this.setState({
             phone: value
@@ -52,10 +53,10 @@ class ProfileForm extends React.Component{
     };
 
     render() {
-        return(
+        return (
             <div>
                 <div className={'post-profile'}>
-                    <div className={'post-header'}>
+                    <div className={'post-header header-padding'}>
                         <div className="page_header_img">
                             <div>
                                 <img className="page_img_user" src={this.state.image} alt="user"/>
@@ -76,21 +77,24 @@ class ProfileForm extends React.Component{
                             </div>
                         </div>
                         <div className="page_header_right">
-                            <input name={'name'} className="page_header_name page_header_name_new" type={'text'} placeholder={this.props.name}
+                            <input name={'name'} className="page_header_name page_header_name_new" type={'text'}
+                                   placeholder={this.props.name}
                                    value={this.state.name} onChange={this.handleName}></input>
                         </div>
                     </div>
-                    <div className="signup">
+                    <div className="profile-padding-bottom">
                         <div className="form-div">
                             <label className="form-text">Email:</label>
                             <input name='email'
-                                   className="form-styling" placeholder={this.props.email}  type="email" disabled="disabled"/>
+                                   className="form-styling" placeholder={this.props.email} type="email"
+                                   disabled="disabled"/>
                             <span className={'span-styling error'}></span>
                         </div>
                         <div className="form-div">
                             <label className="form-text">Phone:</label>
                             <input name='phone'
-                                   className="form-styling" placeholder={this.props.phone} value={this.state.phone} type="phone"
+                                   className="form-styling" placeholder={this.props.phone} value={this.state.phone}
+                                   type="phone"
                                    onChange={this.handlePhone}/>
                             <span className={'span-styling error'}></span>
                         </div>
@@ -99,13 +103,19 @@ class ProfileForm extends React.Component{
                 </div>
                 <div className="footer-profile">
                     <div className="footer-sign-right">
-                        <div className="btn cancel-btn" href="#">
-                            <span>Cancel</span>
-                        </div>
-                        <div className="btn save-btn" onClick={() => this.props.editUser(this.props.email, this.state.avatar, this.state.name, this.state.phone)} href={'#'}>
-                            <i className="icon-save"/>
-                            <span>Save changes</span>
-                        </div>
+                        <Link to={'/propets/home'}>
+                            <div className="btn cancel-btn" href="#">
+                                <span>Cancel</span>
+                            </div>
+                        </Link>
+                        <Link to={'/propets/home'}>
+                            <div className="btn save-btn"
+                                 onClick={() => this.props.editUserWithAvatar(this.props.email, this.state.avatar || this.props.avatar, this.state.name, this.state.phone)}
+                                 href={'#'}>
+                                <i className="icon-save"/>
+                                <span>Save changes</span>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -119,15 +129,15 @@ class ProfileForm extends React.Component{
 const mapStateToProps = (state) => {
     return {
         avatar: state.login.user.avatar,
-        name:state.login.user.name,
+        name: state.login.user.name,
         email: state.login.user.email,
-        phone:state.login.user.phone
+        phone: state.login.user.phone
     }
 };
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators(
         {
-            editUser: editUser
+            editUserWithAvatar: editUserWithAvatar
         },
         dispatch
     );

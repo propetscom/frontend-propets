@@ -23,7 +23,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: 0 3px 6px #00000029;
-    margin-top: 15px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .profile-icon{
@@ -73,4 +74,27 @@
     flex-direction: row;
     justify-content: flex-end;
     padding-top: 10px;
+}
+
+.header-padding{
+    padding-bottom: 15px;
+}
+
+.profile-padding-bottom{
+    padding-bottom: 50px;
+}
+.btn-lost{
+    display: inline-block;
+    width: 148px;
+    height: 34px;
+    border-radius: 17px;
+    padding-top: 6px;
+    text-align: left;
+}
+.button-header-lost{
+    background: #FFE78D;
+    margin-right: 15px;
+}
+.button-header-found{
+    background: #84B6A3;
 }

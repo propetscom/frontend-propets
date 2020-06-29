@@ -35,9 +35,9 @@ export default function auth(state =  {}, action) {
                 isAuthenticated: false
             });
         case EDIT_USER_ERROR:
+            alert(action.messageEditUser);
             return Object.assign({}, state, {
                 isFetching: false,
-                message: action.message
             });
         case EDIT_USER_SUCCESS:
             return Object.assign({}, state, {
