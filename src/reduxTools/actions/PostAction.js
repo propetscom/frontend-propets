@@ -38,7 +38,7 @@ export const getPosts = (page,token) => {
             credentials: "omit",
             headers: {
                 'Content-Type': 'application/json',
-                'X-Token': token
+                'X-Token': localStorage.getItem('X-Token')
             }
         })
             .then(response => response.json(), e => dispatch(postsError()) )
