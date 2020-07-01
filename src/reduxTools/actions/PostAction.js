@@ -33,7 +33,7 @@ export const getPosts = (page,token) => {
     let numbers =[];
     return (dispatch) => {
         dispatch(postsRequest());
-        fetch(`https://propetsapp.herokuapp.com/message/en/v1/view/?itemsOnPage=${postsHome}&currentPage=${page}`, {
+        fetch(`https://pro-pets-router.herokuapp.com/message/en/v1/view/?itemsOnPage=${postsHome}&currentPage=${page}`, {
             method: 'GET',
             credentials: "omit",
             headers: {

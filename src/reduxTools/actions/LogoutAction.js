@@ -23,6 +23,11 @@ export const logoutUser = () => {
     return (dispatch) => {
         dispatch(requestLogout());
         localStorage.removeItem('X-Token');
+        localStorage.removeItem('X-Name');
+        localStorage.removeItem('X-Login');
+        localStorage.removeItem('X-Avatar');
+        localStorage.removeItem('X-Phone');
+        localStorage.removeItem('X-Roles');
         console.log(localStorage.getItem('X-Token'));
         dispatch(receiveLogout())
     }

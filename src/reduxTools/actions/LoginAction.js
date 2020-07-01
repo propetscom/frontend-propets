@@ -50,7 +50,7 @@ export const loginUser = (user) => {
 
     return (dispatch) => {
         dispatch(requestLogin(user));
-        fetch('https://propetsapp.herokuapp.com/account/en/v1/login', config)
+        fetch('https://pro-pets-router.herokuapp.com/account/en/v1/login', config)
             .then(response =>
                 response.json().then(user => ({user, response}))
             ).then(({user, response}) => {
@@ -87,7 +87,7 @@ export const registrUser = (user) => {
 
     return (dispatch) => {
         dispatch(requestLogin(user));
-        fetch('https://propetsapp.herokuapp.com/account/en/v1', config)
+        fetch('https://pro-pets-router.herokuapp.com/account/en/v1', config)
             .then(response =>
                 response.json().then(user => ({user, response}))
             ).then(({user, response}) => {
@@ -113,7 +113,7 @@ export const registrUser = (user) => {
 export const tokenAction = (token) => {
     return (dispatch) => {
         dispatch(requestToken(token));
-        fetch(`https://propetsapp.herokuapp.com/account/en/v1/token/validation`, {
+        fetch(`https://pro-pets-router.herokuapp.com/account/en/v1/token/validation`, {
             method: 'GET',
             credentials: "omit",
             headers: {

@@ -65,7 +65,7 @@ export const imagesUpload = (image,count,email, name, avatar, text, urls) => {
                         "text": text,
                         "images": urls
                     };
-                        fetch(`https://propetsapp.herokuapp.com/message/en/v1/${email}`, {
+                        fetch(`https://pro-pets-router.herokuapp.com/message/en/v1/${email}`, {
                             method: 'POST',
                             credentials: "omit",
                             headers: {
@@ -119,7 +119,7 @@ export const createPost = (email, name, avatar, text, images) => {
         "images": images
     };
     return (dispatch) => {
-        fetch(`https://propetsapp.herokuapp.com/message/en/v1/${email}`, {
+        fetch(`https://pro-pets-router.herokuapp.com/message/en/v1/${email}`, {
             method: 'POST',
             credentials: "omit",
             headers: {

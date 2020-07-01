@@ -59,7 +59,7 @@ export const editUserWithAvatar = (email,avatar,name,phone) =>{
                     phone:phone
                 };
                 dispatch(requestEditUser(user));
-                fetch(`https://propetsapp.herokuapp.com/account/en/v1/${email}`, {
+                fetch(`https://pro-pets-router.herokuapp.com/account/en/v1/${email}`, {
                     method: 'put',
                     credentials: "omit",
                     headers: {

@@ -32,7 +32,7 @@ export const favoritesError = (message) => ({
 export const getFavorites = (email) => {
     return (dispatch) => {
         dispatch(favoritesRequest());
-        fetch(`https://propetsapp.herokuapp.com/userdata/en/v1/${email}?dataType=true`, {
+        fetch(`https://pro-pets-router.herokuapp.com/userdata/en/v1/${email}?dataType=true`, {
             method: 'GET',
             credentials: "omit",
             mode: 'cors',
@@ -51,7 +51,7 @@ export const getFavorites = (email) => {
 export const changeFavoritesPost = (token,email, idPost, type) => {
     return (dispatch) => {
         dispatch(favoritesRequest(idPost));
-        fetch(`https://propetsapp.herokuapp.com/account/en/v1/${email}/favorite/${idPost}`, {
+        fetch(`https://pro-pets-router.herokuapp.com/account/en/v1/${email}/favorite/${idPost}`, {
                 method: type,
                 credentials: "omit",
                 mode: 'cors',
