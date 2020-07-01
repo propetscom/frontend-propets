@@ -1,6 +1,47 @@
-.lost-nav-input{
+
+.lost-content{
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+}
+.content-lost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lost-navigation{
+    padding: 20px;
+}
+
+.lost-nav-type{
     width: 145px;
     height: 30px;
+}
+
+.lost-nav-input{
+    padding-left: 10px;
+    margin-right: 10px;
     border: 1px solid #8DBFAC;
     border-radius: 15px;
 }
+
+.lost-nav-additional{
+    width: 337px;
+    height: 30px;
+}
+
+.lost-nav-location{
+    width: 226px;
+    height: 30px;
+}
+
+.lost-map{
+    width: 30%;
+    border-radius: 15px 0px 0px 0px;
+    background-color: #84B6A3;
+    min-height: 100vh;
+    height: auto;
+}
+
+input::-webkit-input-placeholder { color: #84B6A3; }
+input::-moz-placeholder { color: #84B6A3; }

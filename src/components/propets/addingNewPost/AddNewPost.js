@@ -6,6 +6,7 @@ import SectionText from "./SectionText";
 import SectionImages from "./SectionImages";
 import SectionButton from "./SectionButton";
 import style from '../../../css/newpost.modules.css';
+import SidebarRight from "../SidebarRight";
 
 function AddNewPost () {
 
@@ -18,8 +19,8 @@ function AddNewPost () {
                         <SectionImages/>
                         <SectionButton/>
                     </div>
-
                 </div>
+                <SidebarRight/>
             </div>
         )
 }

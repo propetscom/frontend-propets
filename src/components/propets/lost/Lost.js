@@ -1,13 +1,18 @@
 import * as React from "react";
 import Navigation from "./Navigation";
+import Map from "./Map";
 
 class Lost extends React.Component{
     render() {
         return (
-            <div className={'content'}>
+            <div className={'lost-content'}>
+            <Navigation/>
+            <div className={'content-lost'}>
                 <div className={'page_content'}>
-                    <Navigation/>
+
                 </div>
+                <Map/>
+            </div>
             </div>
         )
     }

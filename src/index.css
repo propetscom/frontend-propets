@@ -121,7 +121,7 @@ li{
     color: #FFFFFF;
     padding-left: 10px;
 }
-.sidebar, .marketing{
+.sidebar{
     width: 23%;
     background-color: #84B6A3;
 }
@@ -268,21 +268,27 @@ li{
 }
 
 .content{
-    width: 54%;
+    width: 76%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*home*/
 
 .page_content{
-    width: 90%;
+    width: 69%;
     margin-bottom: 10px;
 
 }
-
+.page-nav{
+    padding-top: 10px;
+    text-align: center;
+}
+.marketing{
+    width: 30%;
+    background-color: #84B6A3;
+}
 
 .page_header{
     display: flex;

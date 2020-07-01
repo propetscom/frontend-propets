@@ -17,7 +17,6 @@ class Main extends React.Component {
             <div className={'main'}>
                 <Sidebar/>
                 <Content />
-                <SidebarRight/>
             </div>
 
         )
@@ -26,7 +25,8 @@ class Main extends React.Component {
 }
 const mapStateToProps = (state) => {
     return {
-        email: state.login.user.email
+        email: state.login.user.email,
+        page:state.general.pageMenu
         
     }
 };

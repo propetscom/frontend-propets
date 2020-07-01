@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import {getPosts, pagePostsAction} from "../../reduxTools/actions/PostAction";
 import {getFavorites} from "../../reduxTools/actions/FavoritesAction";
+import SidebarRight from "./SidebarRight";
 
 class Home extends React.Component {
 
@@ -45,10 +46,11 @@ class Home extends React.Component {
                 <section className="page_content">
                     {console.log('post'+this.props.posts[0])}
                     {this.props.posts[0] ? this.props.posts.map((post, index) => <Post key={post.id} {...post}/>) : ''}
+                    <div className={'page-nav'}>
+                        {this.props.numbers.map((page, index) => <NavigationPage pagePosts={page} index={index} handlePagePosts={this.handlePagePosts}/>)}
+                    </div>
                 </section>
-                <div>
-                    {this.props.numbers.map((page, index) => <NavigationPage pagePosts={page} index={index} handlePagePosts={this.handlePagePosts}/>)}
-                </div>
+                <SidebarRight/>
             </div>)
     }
 

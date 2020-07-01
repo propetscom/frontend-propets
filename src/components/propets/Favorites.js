@@ -3,6 +3,7 @@ import Post from "./Post";
 import {bindActionCreators} from "redux";
 import {getFavorites} from "../../reduxTools/actions/FavoritesAction";
 import {connect} from "react-redux";
+import SidebarRight from "./SidebarRight";
 
 
 class Favorites extends React.Component {
@@ -31,10 +32,12 @@ class Favorites extends React.Component {
     render() {
         return (
             <div className={'content'}>
-                <div className={'post-title'}>Your favorites. Find them here anytime.</div>
+
                 <section className="page_content">
+                    <div className={'post-title'}>Your favorites. Find them here anytime.</div>
                     {this.props.arrayFavorites ? this.props.arrayFavorites.map((post, index) => <Post {...post}/>) : ''}
                 </section>
+                <SidebarRight/>
             </div>)
 
     }
