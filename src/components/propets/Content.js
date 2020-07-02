@@ -7,9 +7,16 @@ import Services from "./Services";
 import Favorites from "./Favorites";
 import Profile from "./profile/Profile";
 import AddNewPost from "./addingNewPost/AddNewPost";
+import {bindActionCreators} from "redux";
+import {getLostPosts} from "../../reduxTools/actions/LostPostAction";
 
 class Content extends React.Component{
 
+    componentDidMount() {
+        if(this.props.pageMenu === 'lost') {
+            this.props.getLostPosts();
+        }
+    }
     render() {
       //  console.log('this.props.match.params.id' + this.props.match.params.id);
         console.log('content privet');
@@ -38,7 +45,16 @@ class Content extends React.Component{
 }
 const mapStateToProps = (state) => {
     return {
-        pageMenu: state.general.pageMenu
+        pageMenu: state.general.pageMenu,
+        postsLost: state.lost.posts,
     }
 };
-export default connect(mapStateToProps)(Content);
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators(
+        {
+            getLostPosts: getLostPosts
+        },
+        dispatch
+    );
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Content);

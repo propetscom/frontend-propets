@@ -25,13 +25,10 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-
         if(this.props.email) {
             this.props.getFavorites(this.props.email);
             this.props.getPosts(this.props.pagePosts,this.props.token);
         }
-
-
 
     }
 

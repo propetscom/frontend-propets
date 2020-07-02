@@ -33,6 +33,13 @@ const initialState = {
         uploadedFileUrl:[],
         message: '',
         error: false
+    },
+    lost:{
+        posts:[],
+        pagePosts:0,
+        count: [1],
+        error:'',
+        request:''
     }
 
 };
