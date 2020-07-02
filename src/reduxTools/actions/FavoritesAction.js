@@ -32,7 +32,7 @@ export const favoritesError = (message) => ({
 export const getFavorites = (email) => {
     return (dispatch) => {
         dispatch(favoritesRequest());
-        fetch(`https://pro-pets-router.herokuapp.com/userdata/en/v1/${email}?dataType=true`, {
+        fetch(`https://pro-pets-router.herokuapp.com/postdata/en/v1/${email}?dataType=true`, {
             method: 'GET',
             credentials: "omit",
             mode: 'cors',
