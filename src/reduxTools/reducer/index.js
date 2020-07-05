@@ -6,5 +6,6 @@ import favoritesReducer from "./FavoritesReducer";
 import auth from "./AuthReducer";
 import newPostReducer from "./AddingNewPostReducer";
 import lostReducer from "./LostReducer";
+import foundReducer from "./FoundReducer";
 
-export const  rootReducer = combineReducers({login: auth, general: generalReducer, posts: postsReducer, favorites: favoritesReducer, newPost: newPostReducer, lost: lostReducer});
+export const  rootReducer = combineReducers({login: auth, general: generalReducer, posts: postsReducer, favorites: favoritesReducer, newPost: newPostReducer, lost: lostReducer, found: foundReducer});

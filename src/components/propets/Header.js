@@ -24,16 +24,19 @@ class Header extends React.Component {
             case 'found':
                 return (
                     <div className="header-right-lost">
+                        <Link to={'/propets/newPostLost'}>
                         <div className="btn-lost button-header-lost">
                             <i className="lost-icon-search"/>
                             <span className="button-header-lost-text">I lost my pet</span>
                         </div>
+                        </Link>
                         <div className="btn-lost button-header-found">
                             <i className="found-icon-search"/>
                             <span className="button-header-fount-text">I found a pet</span>
                         </div>
                     </div>
                 );
+            case 'newPostLost':
             case 'profile':
                 return '';
             default:

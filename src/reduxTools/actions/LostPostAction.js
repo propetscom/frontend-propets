@@ -1,5 +1,4 @@
-import {postsHome} from "../../utils/Const";
-import {postsError, postsSuccess} from "./PostAction";
+
 
 
 export const LOST_POST_REQUEST = 'LOST_POST_REQUEST';

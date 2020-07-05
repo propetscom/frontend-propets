@@ -1,9 +1,4 @@
 import * as React from "react";
-import {bindActionCreators} from "redux";
-import {getPosts, pagePostsAction} from "../../../reduxTools/actions/PostAction";
-import {getFavorites} from "../../../reduxTools/actions/FavoritesAction";
-import {connect} from "react-redux";
-import {getLostPosts} from "../../../reduxTools/actions/LostPostAction";
 import ImagesPost from "../ImagesPost";
 
 class PostLostFound extends React.Component {
@@ -31,6 +26,7 @@ class PostLostFound extends React.Component {
                         <span className={'span-item'}>Description:</span> brown fox jumps over a lazy dog.
                         DJs flock by when MTV ax quiz prog.
                         Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
+                        <br/>{this.props.tags}
                     </div>
                     <div className={'lost-inform-location'}>
                         <span className={'icon-location'}> </span>

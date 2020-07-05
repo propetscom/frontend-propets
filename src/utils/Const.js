@@ -1,6 +1,7 @@
 export const postsHome = 5;
 export const postTitleNewPost = ' Your new post! Simply text, add photos and publish.';
 export const postTitleProfile = 'Your profile. Change, edit and manage your data.';
+export const postTitleNewPostLost = 'Lost your buddy? Keep calm and complete the form.';
 
 export const textNewPost = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
     'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ' +
@@ -14,3 +15,5 @@ export const textNewPost = 'Lorem Ipsum is simply dummy text of the printing and
     ' Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,' +
     ' making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, ' +
     'looked up one of the more obscure Latin words.';
+
+export const  textFoundForDescription = 'brown fox jumps over a lazy dog. DJs flock by when jhkjk jhgMTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.';

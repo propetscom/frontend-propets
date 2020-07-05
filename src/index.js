@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import store from "./reduxTools/store/PropetsStore";
 
 ReactDOM.render(
+
     <Provider store={store}>
     <BrowserRouter>
         <App/>

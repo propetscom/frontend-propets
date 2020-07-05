@@ -40,6 +40,13 @@ const initialState = {
         count: [1],
         error:'',
         request:''
+    },
+    found:{
+        posts:[],
+        pagePosts:0,
+        count: [1],
+        error:'',
+        request:''
     }
 
 };

@@ -9,6 +9,7 @@ import {connect} from "react-redux";
 
 class Propets extends React.Component {
     componentDidMount() {
+        console.log('props: ' + this.props);
         this.props.changePage(this.props.match.params.id);
     }
 

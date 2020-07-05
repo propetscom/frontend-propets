@@ -36,7 +36,7 @@
 .post-textarea {
     width: 80%;
     height: 422px;
-
+    border: 1px solid #8DBFAC;
 }
 
 .preview-div {
