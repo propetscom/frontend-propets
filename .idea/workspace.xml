@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d4ecc85-3045-49b8-96f8-27f3680b8955" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/PetsIconMain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/found.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/propets/addingNewPost/FormLostFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/propets/lost/NewPostLost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/newlostpost.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reduxTools/actions/FoundAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reduxTools/reducer/FoundReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/Found.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/lost/Found.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/Propets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/Propets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/propets/lost/PostLostFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/propets/lost/PostLostFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/newpost.modules.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newpost.modules.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reduxTools/actions/LostPostAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduxTools/actions/LostPostAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reduxTools/reducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduxTools/reducer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reduxTools/store/PropetsStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduxTools/store/PropetsStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Const.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +268,7 @@
       <workItem from="1593685478392" duration="3503000" />
       <workItem from="1593845469718" duration="428000" />
       <workItem from="1593862146787" duration="6065000" />
-      <workItem from="1593928795648" duration="3560000" />
+      <workItem from="1593928795648" duration="5427000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1592601851388</created>
@@ -422,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593686412950</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit">
+      <created>1593932374521</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1593932374521</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,30 +433,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="96" key="#predeploy/0.0.1536.824@0.0.1536.824" timestamp="1592339952915" />
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1593686411419">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1593932372607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593686411419" />
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593932372607" />
     <state x="228" y="184" key="FileChooserDialogImpl" timestamp="1593415933958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="228" y="184" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593415933958" />
-    <state width="1515" height="38" key="GridCell.Tab.0.bottom" timestamp="1593871350179">
+    <state width="1515" height="38" key="GridCell.Tab.0.bottom" timestamp="1593935823598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="38" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593871350179" />
-    <state width="1515" height="38" key="GridCell.Tab.0.center" timestamp="1593871350179">
+    <state width="1515" height="38" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593935823598" />
+    <state width="1515" height="38" key="GridCell.Tab.0.center" timestamp="1593935823597">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="38" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593871350179" />
-    <state width="1515" height="38" key="GridCell.Tab.0.left" timestamp="1593871350178">
+    <state width="1515" height="38" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593935823597" />
+    <state width="1515" height="38" key="GridCell.Tab.0.left" timestamp="1593935823596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="38" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593871350178" />
-    <state width="1515" height="38" key="GridCell.Tab.0.right" timestamp="1593871350179">
+    <state width="1515" height="38" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593935823596" />
+    <state width="1515" height="38" key="GridCell.Tab.0.right" timestamp="1593935823598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="38" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593871350179" />
+    <state width="1515" height="38" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593935823598" />
     <state width="757" height="239" key="GridCell.Tab.1.bottom" timestamp="1592340683472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
